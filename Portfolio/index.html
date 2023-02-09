@@ -16,19 +16,34 @@
 </head>
 
 <body>
-    <div class="head-menu">
+    <div class="head-menu center">
         <div class="head__menu__left">
             <a class="puff-in-center" href="#">Portfolio</a>
         </div>
         <div class="head__menu__right">
-            <a href="#">Главная</a>
-            <a href="#">Обо мне</a>
-            <a href="#">Проекты</a>
-            <a href="#">Контакты</a>
+            <a href="#main">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#project">Проекты</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+
+        <div class="menu-media">
+            <input id="check" type="checkbox">
+            <label for="check">
+                <img src="img/menu-icon.png" alt="menu-icon">
+            </label>
+            <div class="box-menu">
+                <a href="#main">Главная</a>
+                <a href="#about">Обо мне</a>
+                <a href="#project">Проекты</a>
+                <a href="#contacts">Контакты</a>
+            </div>
         </div>
     </div>
 
-    <div class="top-content">
+
+
+    <div id="main" class="top-content">
         <div class="top__content__left">
             <h1>Привет, меня зовут Максим Иваненко!</h1>
             <p>Я <span class="frontend">frontend-разработчик</span> и это мое портфолио.
@@ -36,24 +51,48 @@
                 узнать обо мне, найти мои контакты и проекты.</p>
         </div>
         <div class="top__content__right">
-            <div class="border"></div>
-            <img src="img/DSC_0063.JPG" alt="мое фото">
+            <!-- <div class="border"></div> -->
+            <button class="slider__button__prev">&#10094;</button>
+            <div class="slider">
+                <div class="slider__line">
+                    <img src="img/DSC_0063.JPG" alt="мое фото">
+                    <img src="img/IMG_1327.jpg" alt="мое фото">
+                    <img src="img/IMG_9241.JPG" alt="мое фото">
+                    <img src="img/IMG_9594.JPG" alt="мое фото">
+                </div>
+            </div>
+
+            <button class="slider__button__next">&#10095;</button>
         </div>
+
+        <div class="top__content__right__media">
+            <div class="border"></div>
+            <img src="img/DSC_00653.JPG" alt="мое фото">
+        </div>
+
     </div>
 
-    <div class="about-content">
+    <div id="about" class="about-content center">
         <h2>Обо мне</h2>
-        <img src="img/Line 4.png" alt="Line">
-        <p>Lorem ipsum dolor sit amet consectetur. Mi sit urna at rutrum. Duis aliquam eu adipiscing leo hendrerit. Et
-            volutpat lectus turpis leo adipiscing purus pulvinar proin tellus. Eget ut felis sed duis. Ornare nunc hac
-            cursus non. Vitae tincidunt et a malesuada.
-            faucibus enim pulvinar duis faucibus dui pharetra. Nisl pharetra orci fermentum nulla leo orci risus
-            tincidunt consectetur. In nascetur ultricies felis dui</p>
+        <img class="line__img" src="img/Line 4.png" alt="Line">
+        <p>Мне 25 лет и всю свои жизнь занимаюсь поиском занятия, которое будет не просто обеспечивать, но и доставлять
+            удовольствие. Сейчас занимаюсь <span class="frontend">frontend-разработкой</span> и стараюсь отточить свои
+            навыки в этом. Очень
+            понравилась верстка веб-страниц, когда из белой пустоты создаешь, что-то красивое и рабочее. В будущем
+            планирую стать фулстек-разработчиком.</p>
+        <p>После 11 класса, учился 2 года в военном институте и 5 лет служил после обучения на границе с Грузией. Во
+            время службы поступил в Новочеркасский политехнический институт, факультет информатика и вычислительная
+            техника, срок обучения 5 лет, защита дипломной работы и выпуск летом 2023 года.</p>
+        <p>Закончив контракт весной 2022 года, уволился с места службы и начал пробовать себя в разных сферах. От продаж
+            до IT. Уже осенью я наткнулся на курс “Быстрый старт. Программист.” на сайте GeekBrains и начал понемногу
+            вливаться в эту сферу. В январе 2023 года сдал итоговый проект на “Отлично” и получил диплом об успешном
+            окончании обучения. Научился пользоваться HTML, CSS и JS, не идеально, но так же продолжаю заниматься
+            самообразованием.</p>
     </div>
 
-    <div class="projects-content">
+    <div id="project" class="projects-content center">
         <h2>Проекты</h2>
-        <img src="img/Line 4.png" alt="Line">
+        <img class="line__img" src="img/Line 4.png" alt="Line">
         <div class="projects">
             <div class="block">
                 <img src="img/1 pro.jpg" alt="1proj">
@@ -67,11 +106,21 @@
                 <h3>Второй проект</h3>
                 <p>Итоговая работа по окончанию курса. Имеется адаптив, эффекты наведения, поля ввода и рейтинга.</p>
             </div>
-            <div class="block"></div>
+            <!-- <div class="block"></div> -->
         </div>
     </div>
 
+    <footer id="contacts" class="contacts-content center">
+        <a href="https://github.com/GitMaxm/AllMyWork"><img class="footer__img pulsate-bck" src="img/logo/github.svg"
+                alt="github"></a>
+        <a href="https://t.me/sonyfox"><img class="footer__img pulsate-bck" src="img/logo/telegram.svg"
+                alt="telegram"></a>
+        <a href="https://vk.com/i.safron"><img class="footer__img pulsate-bck" src="img/logo/vk.svg" alt="vk"></a>
+        <a href="#"><img class="footer__img pulsate-bck" src="img/logo/instagram.svg" alt="instagram"></a>
+    </footer>
 
+
+    <script src="data.js"></script>
 </body>
 
 
