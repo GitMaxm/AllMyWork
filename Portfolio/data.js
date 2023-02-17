@@ -16,3 +16,15 @@ document.querySelector('.slider__button__prev').addEventListener('click', functi
     }
     sliderLineEl.style.left = -offset + 'px';
 })
+
+
+
+
+
+// const menuEl = document.querySelector('.menu-media');
+const iconEl = document.querySelector('.icon__menu');
+const boxMenuEl = document.querySelector('.box-menu');
+
+iconEl.addEventListener('click', function (e) {
+    boxMenuEl.classList.toggle('box-menu__none');
+});

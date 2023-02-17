@@ -366,6 +366,107 @@ a {
 }
 
 @media (max-width: 768px) {
+  .head-menu {
+    padding: 18px 45px;
+    margin-bottom: 0px;
+  }
+
+  .head__menu__left a {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(img/2cvetnoe-fonovoe-izobrazhenie-dlya-prezentacii.jpg);
+    background-repeat: no-repeat;
+    padding-top: 55px;
+  }
+
+  .top__content__right {
+    display: none;
+  }
+
+  .top__content__right__media {
+    display: block;
+  }
+
+  .top__content__right__media img {
+    width: 210px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 45%);
+    border-radius: 10px;
+    /* position: relative; */
+  }
+
+  .top__content__left h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #020a18;
+    padding: 30px 45px 30px 45px;
+    text-align: center;
+  }
+
+  .top__content__left p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 30px 45px 30px 45px;
+    color: #00263e;
+  }
+
+  .about-content {
+    padding: 40px 45px;
+  }
+
+  .about-content h2 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about-content p {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .projects {
+    padding-top: 27px;
+  }
+
+  .block {
+    width: auto;
+  }
+
+  .projects-content {
+    padding: 40px 45px;
+  }
+
+  .projects-content h2 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .block h3 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .block p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .block img:hover {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 425px) {
@@ -397,6 +498,10 @@ a {
 
   .menu-media {
     display: block;
+  }
+
+  .box-menu__none {
+    display: none;
   }
 
   .box-menu a {
@@ -454,8 +559,6 @@ a {
   }
 
   .top__content__left h1 {
-    font-style: normal;
-    font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     color: #020a18;
@@ -464,8 +567,6 @@ a {
   }
 
   .top__content__left p {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
