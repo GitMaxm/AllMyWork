@@ -196,10 +196,11 @@ a {
   align-items: flex-start;
   justify-content: space-around;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .block {
-  width: 36%;
+  width: 30%;
 }
 
 .block img {
@@ -441,7 +442,7 @@ a {
   }
 
   .block {
-    width: auto;
+    width: 300px;
   }
 
   .projects-content {
