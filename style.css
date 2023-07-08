@@ -239,8 +239,15 @@ a {
   background: rgb(151 223 247 / 9%);
 }
 
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .footer__img {
-  width: 27px;
+  width: 20px;
+  height: 20px;
 }
 
 .menu-media {
